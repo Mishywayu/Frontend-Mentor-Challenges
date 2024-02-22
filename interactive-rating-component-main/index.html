@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <!-- <link rel="stylesheet" type="text/tailwindcss" href="style.css" /> -->
+  <title>Frontend Mentor | Interactive rating component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkB: '#252D37',
+            verydarkB: '#121417',
+            lightG: '#959EAC',
+            mediumG: '#7C8798',
+            orange: '#FB7413',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="bg-verydarkB rounded-lg w-1/4 mt-44 ml-96 p-8">
+    <div class="bg-darkB w-10 h-10 rounded-full">
+      <img src="/images/icon-star.svg" alt="star" class="pl-3 pt-3" />
+    </div>
+
+    <h1 class="text-white text-2xl font-semibold pt-6">How did we do?</h1>
+
+    <p class="text-lightG text-xs pt-3">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <div class="flex gap-3 mt-4">
+      <button class="text-lightG w-10 h-10 rounded-full bg-darkB text-center pointer hover:bg-orange hover:text-white active:bg-lightG">1</button>
+      <button class="text-lightG w-10 h-10 rounded-full bg-darkB text-center pointer hover:bg-orange hover:text-white active:bg-lightG">2</button>
+      <button class="text-lightG w-10 h-10 rounded-full bg-darkB text-center pointer hover:bg-orange hover:text-white active:bg-lightG">3</button>
+      <button class="text-lightG w-10 h-10 rounded-full bg-darkB text-center pointer hover:bg-orange hover:text-white active:bg-lightG">4</button>
+      <button class="text-lightG w-10 h-10 rounded-full bg-darkB text-center pointer hover:bg-orange hover:text-white active:bg-lightG">5</button>
+    </div>
+
+      <button class="bg-orange text-white text-sm text-center w-full h-9 rounded-full mt-8 pointer hover:bg-white hover:text-orange">SUBMIT</button>
+  </div>
+</body>
+</html>
